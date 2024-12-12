@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Event Binding</h1>
+<input type="text" #productname class="form-control">
+
+<button (click)="onbtnclick(productname)" class="btn btn-sm btn-primary">
+    click btn
+</button>
+<br><br>
+
+<button (click)="onproAdd()" class="btn btn-sm btn-primary">Add Product</button>
+<p class="alert alert-warning">{{productAddstatus}}</p>
+
+
+<button (click)="onproRemove()" class="btn btn-sm btn-primary">Remove Product</button>
+<p class="alert alert-warning">{{productRemovestatus}}</p>
+</div>
+
